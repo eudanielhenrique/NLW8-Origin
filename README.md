@@ -10,16 +10,11 @@
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eudanielhenrique/feedget.svg?color=bf6919">
   
-  <a href="https://github.com/lorenatoscano/feedget/commits/main">
+  <a href="https://github.com/eudanielhenrique/feedget/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eudanielhenrique/feedget.svg?color=bf6919">
   </a>
 
   <img alt="GitHub" src="https://img.shields.io/github/license/eudanielhenrique/feedget?color=bf6919">
-</p>
-
-<p align="center">
-
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
 <br>
