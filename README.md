@@ -10,7 +10,7 @@
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eudanielhenrique/feedget.svg?color=bf6919">
   
-  <a href="https://github.com/eudanielhenrique/feedget/commits/main">
+  <a href="https://github.com/eudanielhenrique/DoctorCare-NLWReturn/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eudanielhenrique/feedget.svg?color=bf6919">
   </a>
 
@@ -20,7 +20,7 @@
 <br>
 
 <p align="center">
-  <img alt="OriginSix" src="https://github.com/eudanielhenrique/nlw-06-orion/blob/main/assets/fotos/projeto.png?" width="100%">
+  <img alt="OriginSix" src="?" width="100%">
 </p>
 
 ## Objetivo do projeto
