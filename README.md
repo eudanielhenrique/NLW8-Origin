@@ -1,15 +1,3 @@
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-melhorias-a-serem-feitas">Melhorias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-<br>
-
-<p align="center">
-  <img alt="img" src="?" width="100%">
-</p>
-
 ## Objetivo do projeto
 
 Projeto desenvolvido durante o NLW Return da [Rocketseat](https://rocketseat.com.br/) para fim de estudo e conhecimento.
