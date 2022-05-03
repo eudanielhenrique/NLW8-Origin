@@ -4,23 +4,10 @@
   <a href="#-melhorias-a-serem-feitas">Melhorias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
-
-<p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/eudanielhenrique/feedget.svg?color=bf6919">
-
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eudanielhenrique/feedget.svg?color=bf6919">
-  
-  <a href="https://github.com/eudanielhenrique/DoctorCare-NLWReturn/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eudanielhenrique/feedget.svg?color=bf6919">
-  </a>
-
-  <img alt="GitHub" src="https://img.shields.io/github/license/eudanielhenrique/feedget?color=bf6919">
-</p>
-
 <br>
 
 <p align="center">
-  <img alt="OriginSix" src="?" width="100%">
+  <img alt="img" src="?" width="100%">
 </p>
 
 ## Objetivo do projeto
