@@ -12,11 +12,7 @@
 
 ## Objetivo do projeto
 
-Projeto desenvolvido na missão Origin no Next Level Week #8 para fim de estudo e conhecimento.
-
-## Sobre
-
-Projeto desenvolvido durante a trilha Impulse do Next Level Week #8 da [Rocketseat](https://rocketseat.com.br/). Consiste numa widget de feedback para ser utilizada em outros projetos web ou mobile.
+Projeto desenvolvido durante o NLW Return da [Rocketseat](https://rocketseat.com.br/) para fim de estudo e conhecimento.
 
 ## 🖥️ Tecnologias utilizadas no projeto
 
@@ -24,7 +20,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
-- JavaScript
 
 ### Status:
 
