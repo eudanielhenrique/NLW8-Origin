@@ -5,7 +5,7 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-p align="center">
+<p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/eudanielhenrique/feedget.svg?color=bf6919">
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/eudanielhenrique/feedget.svg?color=bf6919">
