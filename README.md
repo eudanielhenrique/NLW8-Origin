@@ -12,7 +12,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ### Status:
 
 - Aula 1 - Concluída ✅
-- Aula 2 - Em construção 🚧
+- Aula 2 - Concluída ✅
 - Aula 3 - Em construção 🚧
 - Aula 4 - Em construção 🚧
 - Aula 5 - Em construção 🚧
