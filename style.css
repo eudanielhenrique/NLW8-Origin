@@ -160,7 +160,7 @@ nav {
     transform: translateX(-50%);
 }
 
-nav .wrapper{
+nav  .wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
