@@ -333,3 +333,40 @@ body.menu-expanded button path{
 #services .card h3 {
     margin-block: 1.6rem;
 }
+
+/* Sobre */
+#about header h4{    
+    font-size: 2.4rem;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+
+    color: var(--primary-color);
+
+    text-transform: uppercase;
+
+    margin-top: 1.6rem;
+}
+
+#about header h2 {
+    margin-bottom: 6rem;
+}
+
+#about .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#about .card {
+    padding: 2.4rem;
+    text-align: left;
+
+    /* color: white; */
+
+    border: 1px solid var(--brand-light);
+    border-radius: 0.6rem;
+}
+
+#services .card h3 {
+    margin-block: 1.6rem;
+}
