@@ -1,4 +1,4 @@
-/* Global */
+/*=== GERAL =================================*/
 * {
   margin: 0;
   padding: 0;
@@ -6,26 +6,25 @@
 }
 
 :root {
-  font-size: 62.5%; /* 1rem = 16px*/
-
-  /* Cores */
-  --hue: 290;
+  --hue: 190;
   --primary-color: hsl(var(--hue), 100%, 26%);
-  --gray-headline: hsl(210, 11%, 15%);
-  --gray-paragraph: hsl(210, 9%, 31%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsl(210, 9%, 31%);
 
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%);
-  --brand-light-2:  hsl(calc(var(--hue) + 10), 14%, 97%);
-
+  --brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%);
   --brand-dark: hsl(var(--hue), 100%, 14%);
 
   --bg-light: hsl(180, 14%, 97%);
 
-  /* Tamanho Nav */
-  --nav-heigth: 7.2rem;
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --nav-height: 7.2rem;
 }
+
 html {
+  /* chrome://flags/#smooth-scrolling */
   scroll-behavior: smooth;
 }
 
@@ -65,31 +64,30 @@ section {
 }
 
 section header h4 {
-  margin-bottom: 1.6rem;
-
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.08rem;
+  color: var(--primary-color);
 
   text-transform: uppercase;
 
-  color: var(--primary-color);
+  margin-bottom: 1.6rem;
 }
 
 section header h2 {
   font-size: 3rem;
   line-height: 3.9rem;
 
-  color: var(--gray-headline);
+  color: var(--headline);
 }
 
 section header h1 {
-  margin-bottom: 2.4rem;
   font-size: 3.4rem;
+  color: var(--headline);
   line-height: 130%;
 
-  color: var(--gray-headline);
+  margin-bottom: 2.4rem;
 }
 
 section .content p {
@@ -97,7 +95,7 @@ section .content p {
   font-size: 1.6rem;
   line-height: 150%;
 
-  color: var(--gray-paragraph);
+  color: var(--paragraph);
 }
 
 .button {
@@ -161,11 +159,11 @@ body.menu-expanded #navigation .logo path,
   stroke: white;
 }
 
-/* Menu */
+/*=== NAVIGATION =================================*/
 nav {
   display: flex;
 
-  height: var(--nav-heigth);
+  height: var(--nav-height);
 
   position: fixed;
   top: 0;
@@ -181,15 +179,7 @@ nav .wrapper {
 }
 
 nav.scroll {
-  background-color: var(--primary-color);
-}
-
-nav.scroll .logo path {
-  fill: white;
-}
-
-nav.scroll button path {
-  stroke: white;
+  background: var(--primary-color);
 }
 
 nav button {
@@ -199,11 +189,11 @@ nav button {
 }
 
 nav .menu,
-nav .close-menu{
+nav .close-menu {
   position: fixed;
 }
 
-/* Menu Aberto */
+/*=== MENU-EXPANDED =================================*/
 body.menu-expanded {
   overflow: hidden;
 }
@@ -224,6 +214,7 @@ body.menu-expanded .close-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .menu {
   transform: translateY(100%);
 }
@@ -231,15 +222,15 @@ body.menu-expanded .close-menu {
 body.menu-expanded .menu {
   top: 0;
   left: 0;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
 
   width: 100vw;
   height: 100vh;
 
-  padding-top: var(--nav-heigth);
+  padding-top: var(--nav-height);
 
-  transition: transform 400ms;
-  transform: translateY(0%);
+  transition: transform 300ms;
+  transform: translateY(0);
 }
 
 .menu ul:nth-child(1) {
@@ -278,11 +269,10 @@ body.menu-expanded .menu {
 }
 
 .menu .button:hover {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   color: white;
-  border: 1px solid var(--brand-light);
 
-  filter: brightness(1.1);
+  filter: brightness(1.3);
 }
 
 body.menu-expanded .logo,
@@ -299,15 +289,16 @@ body.menu-expanded button path {
   stroke: white;
 }
 
-/* home */
+/*=== #HOME =================================*/
 #home {
-  padding-top: calc(4.1rem + var(--nav-heigth));
+  padding-block: 0;
+  padding-top: calc(4.1rem + var(--nav-height));
 }
 
 #home::before {
   content: '';
   width: 100%;
-  height: calc(108rem + var(--nav-heigth));
+  height: calc(76% + var(--nav-height));
   background-color: var(--brand-light);
   display: block;
 
@@ -325,7 +316,7 @@ body.menu-expanded button path {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 400;
-  color: var(--gray-paragraph);
+  color: var(--paragraph);
 
   margin-bottom: 3.2rem;
 }
@@ -354,20 +345,20 @@ body.menu-expanded button path {
 
 #home .stat h3 {
   font-size: 4.8rem;
+  color: var(--headline);
   line-height: 130%;
-  color: var(--gray-headline);
 
   margin-bottom: 0.4rem;
 }
 
 #home .stat p {
   margin: 0;
+  color: var(--primary-color);
   font-size: 1.6rem;
   line-height: 150%;
-  color: var(--primary-color);
 }
 
-/* Serviços */
+/*=== SERVICES =================================*/
 #services header h2 {
   margin-bottom: 6rem;
 }
@@ -382,7 +373,7 @@ body.menu-expanded button path {
   padding: 2.4rem;
   text-align: left;
 
-  /* color: white; */
+  background: white;
 
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
@@ -392,7 +383,7 @@ body.menu-expanded button path {
   margin-block: 1.6rem;
 }
 
-/* Sobre */
+/*=== ABOUT =================================*/
 #about {
   text-align: left;
   background-color: var(--brand-beige);
@@ -407,7 +398,7 @@ body.menu-expanded button path {
   margin-bottom: 6rem;
 }
 
-/* Contato */
+/*=== CONTACT =================================*/
 #contact {
   text-align: left;
 }
@@ -430,7 +421,7 @@ body.menu-expanded button path {
   gap: 0.8rem;
 }
 
-/* Rodape */
+/*=== FOOTER =================================*/
 footer {
   background-color: var(--primary-color);
   padding-block: 6rem;
@@ -450,7 +441,7 @@ footer .logo svg {
   height: 3.1rem;
 }
 
-footer .logo {
+footer .logo path {
   fill: white;
 }
 
@@ -484,16 +475,38 @@ footer .social-links {
   transform: translateY(0);
 }
 
-
-/* Responsividade */
+/*=== RESPONSIVO =================================*/
 @media (min-width: 1024px) {
-  /* Geral */
-  .wrapper{
-    width: min(122.0rem, 100%);
+  /*=== GERAL =================================*/
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(112rem, 100%);
     display: grid;
   }
+
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
+  section {
+    padding-block: 16rem;
+  }
+
+  section header h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  /*=== NAVIGATION =================================*/
   /* reset */
-  nav#navigation .wrapper *{
+  nav#navigation .wrapper * {
     margin: 0;
     padding: 0;
     visibility: initial;
@@ -507,49 +520,6 @@ footer .social-links {
     color: initial;
     background-color: initial;
     filter: initial;
-  }
-  
-  nav#navigation .close-menu,
-  nav#navigation .open-menu,
-  nav#navigation .social-links{
-    display: none;
-  }
-
-  /* Menu */
-  nav#navigation .menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
-  }
-
-  nav#navigation .menu ul:nth-child(1){
-    display: flex;
-    gap:3.2rem;
-
-  }
-
-  nav#navigation .menu ul li a{
-    line-height: 21px;
-    
-    color: var(--primary-color);
-  }
-
-  nav#navigation .menu a.button{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2.4rem;
-
-    border: 1px solid var(--primary-color);
-    border-radius: 4rem;
-
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    text-transform: uppercase;
   }
 
   nav#navigation .close-menu,
@@ -655,13 +625,20 @@ footer .social-links {
     border: none;
   }
 
-  /* Home */
-  
-  #home .wrapper{
+  /*=== HOME =================================*/
+  #home::before {
+    height: calc(96% - var(--nav-height));
+  }
+
+  #home {
+    padding-top: var(--nav-height);
+  }
+
+  #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas:
-    'A B'
-    'C C';
+      'A B'
+      'C C';
   }
 
   #home .col-a {
@@ -676,7 +653,7 @@ footer .social-links {
   #home .content p {
     font-size: 1.8rem;
   }
-  
+
   #home .stats {
     grid-area: C;
 
@@ -685,22 +662,86 @@ footer .social-links {
     gap: 0;
   }
 
-  #home .stats .stat + .stat{
+  #home .stats .stat + .stat {
     border-left: 1px solid var(--primary-color);
   }
 
-  #home .stats .stat{
+  #home .stats .stat {
     flex: 1;
   }
 
-  #home .button{
+  #home .button {
     margin: 0;
   }
 
-  #home img{
+  #home img {
     width: 42rem;
   }
 
-    /* Serviços */
+  /*=== SERVICES =================================*/
+  #services h2 {
+    width: 47rem;
+    margin-inline: auto;
+  }
 
+  #services .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #services .card {
+    width: 30%;
+    flex-grow: 1;
+  }
+
+  /*=== ABOUT =================================*/
+  #about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+  }
+
+  #about .col-a {
+    align-self: center;
+  }
+
+  #about .content p {
+    margin-bottom: 0;
+  }
+
+  /*=== CONTACT =================================*/
+
+  #contact .wrapper {
+    grid-template-columns: 1fr 57.5rem;
+    grid-template-areas: 'A B';
+  }
+
+  #contact h2 {
+    width: 40.4rem;
+  }
+
+  /*=== FOOTER =================================*/
+  footer {
+    padding-block: 8rem;
+  }
+  
+  footer .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+  }
+
+  footer .col-a {
+    align-self: center;
+  }
+
+
+  footer .col-b {
+    align-self: center;
+    justify-self: flex-end;
+  }
+
+  footer p {
+    margin-bottom: 0
+  }
 }

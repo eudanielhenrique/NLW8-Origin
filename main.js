@@ -1,52 +1,78 @@
 window.addEventListener('scroll', onScroll)
 
-// Função de habilitar meenu.
 onScroll()
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
+
+  activateMenuAtCurrentSection(home)
+  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(about)
+  activateMenuAtCurrentSection(contact)
 }
 
-// Função de habilitar meenu.
+function activateMenuAtCurrentSection(section) {
+  const targetLine = scrollY + innerHeight / 2
+
+  // verificar se a seção passou da linha
+  // quais dados vou precisar?
+  const sectionTop = section.offsetTop
+  const sectionHeight = section.offsetHeight
+  const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
+
+  // verificar se a base está abaixo da linha alvo
+
+  const sectionEndsAt = sectionTop + sectionHeight
+  const sectionEndPassedTargetline = sectionEndsAt <= targetLine
+
+  // limites da seção
+  const sectionBoundaries =
+    sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
+
+  const sectionId = section.getAttribute('id')
+  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
+
+  menuElement.classList.remove('active')
+  if (sectionBoundaries) {
+    menuElement.classList.add('active')
+  }
+}
+
 function showNavOnScroll() {
   if (scrollY > 0) {
-    navigation.classList.add('scroll') //Add Scroll na class
+    navigation.classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll') //Remove Scroll da class
+    navigation.classList.remove('scroll')
   }
 }
 
-//Mostra botão de voltar ao topo
 function showBackToTopButtonOnScroll() {
   if (scrollY > 550) {
-    backToTopButton.classList.add('show') //Add show na class
+    backToTopButton.classList.add('show')
   } else {
-    backToTopButton.classList.remove('show') //Remove show da class
+    backToTopButton.classList.remove('show')
   }
 }
 
-//Função abrir menu
 function openMenu() {
   document.body.classList.add('menu-expanded')
 }
 
-//Função fecha menu menu
 function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
 
-//Função ScrollReveal
 ScrollReveal({
   origin: 'top',
   distance: '30px',
   duration: 700
 }).reveal(`
-  #home,
-  #home img,
-  #home .stats,
+  #home, 
+  #home img, 
+  #home .stats, 
   #services,
   #services header,
-  #services .card,
-  #about,
-  #about header,
+  #services .card
+  #about, 
+  #about header, 
   #about .content`)
